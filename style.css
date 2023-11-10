@@ -1,0 +1,53 @@
+:root {
+    --white-color: #fff;
+    --orange-color: #ecb13a;
+}
+
+* {
+    /* select box elements inside the same value */
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Asap';
+}
+
+.content-max-width {
+    max-width: min(1240px, 100vw);
+    margin: 0 auto;
+}
+
+header {
+    background-color: lightblue;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+header .header-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+    padding: 0 20px;
+}
+
+header .navigation .navigation-menu {
+    list-style: none;
+    display: flex;
+}
+
+header .navigation .navigation-menu li a {
+    color: var(--white-color);
+    padding: 10px 24px;
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    text-decoration: none;
+
+}
+
+
+header .navigation .navigation-menu li a:hover {
+    background-color: var(--orange-color);
+}
