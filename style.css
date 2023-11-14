@@ -29,6 +29,7 @@ header .header-container {
     justify-content: space-between;
     gap: 30px;
     padding: 0 20px;
+    /* position: fixed; */
 }
 
 header .navigation .navigation-menu {
@@ -47,7 +48,57 @@ header .navigation .navigation-menu li a {
 
 }
 
-
 header .navigation .navigation-menu li a:hover {
-    background-color: var(--orange-color);
+    color: var(--orange-color);
+}
+
+main .content-max-width {
+    grid-area: main;
+    padding-top: 0px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+main .courses-section {
+    position: relative;
+    margin: 0px;
+    width: 100%;
+    min-height: 470px;
+    display: flex;
+    align-items: center;
+    padding: 96px 0px;
+}
+
+main div .course-container {
+    background-image: url(https://www.itschool.ro/_next/static/media/background.789562e5.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    z-index: -1;
+    top: -76px;
+    left: -20px;
+    bottom: 0px;
+    width: 100vw;
+
+}
+
+main .courses-section .courses-text {
+    margin: auto;
+    max-width: 1000px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+main .courses-section .courses-text h1 {
+    font-size: 48px;
+    font-weight: 500;
+    line-height: 1.21;
+    text-align: center;
+    color: var(--white-color);
+    margin: 0px;
 }
